@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-    
+
 <head>
   <meta charset="UTF-8">
   <title>Interaktive Produktliste mit Filter</title>
@@ -10,15 +10,12 @@
 
 <h1>Produktliste</h1>
 
-<!-- Live-Textfilter -->
 <input type="text" id="search" placeholder="Produkte suchen..." onkeyup="filterProducts()">
 
-<!-- Preisfilter -->
 <br><br>
 <label>Maximalpreis: </label>
 <input type="number" id="priceFilter" oninput="filterProducts()" placeholder="Preis eingeben">
 
-<!-- Sortierung -->
 <br><br>
 <label>Sortieren nach: </label>
 <select id="sortOption" onchange="filterProducts()">
@@ -27,7 +24,6 @@
   <option value="desc">Preis (absteigend)</option>
 </select>
 
-<!-- Produktliste -->
 <div id="product-list"></div>
 
 
